@@ -32,7 +32,7 @@ body{
 .menu a{
     font-size: 1.5vw;
     font-family: 'Nunito', sans-serif;
-    color: rgb(204, 204, 204);
+    color: rgb(187, 187, 187);
     transition: color .1s, transform .1s ease-in-out;
 }
 
@@ -93,7 +93,7 @@ body{
 
 .text-saudacoes{
     font-family: 'Quicksand', sans-serif;
-    color: rgb(201, 201, 201);
+    color: rgb(187, 187, 187);
     font-size: 2.5vw;
     padding-top: 14%;
     padding-left: 2em;
