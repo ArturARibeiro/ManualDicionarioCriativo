@@ -185,4 +185,12 @@ body{
     bottom: 0px;
     text-align: center;
     color: grey;
+    background: linear-gradient(332deg, rgba(230,86,1,1) 0%, rgb(255, 123, 0) 100%);
+}
+
+.footer img{
+    max-width: 300px;
+    min-width: 100px;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
 }

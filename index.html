@@ -14,14 +14,9 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://css.gg/css?=|facebook|google|twitter" rel="stylesheet">
 
-    <!-- script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/app.js"></script>
-    <script type="text/javascript">
-        window.onload = Active;
-        window.onscroll = Active;
-    </script>
+    
 </head>
 
 <body>
@@ -45,13 +40,14 @@
                 <span class='hamburger'></span>
             </div>
         </label>
+        
         <ul" class="ul-mobile" style="transform: translate(-50%, 30%) !important;">
-            <li><a href="#home">Home</a></li><br />
-            <li><a href="#">Introdução</a></li><br />
+            <li><a href="#home" onclick="MobileMenu()">Home</a></li><br />
+            <li><a href="#introducao" onclick="MobileMenu()">Introdução</a></li><br />
             <li><a href="#">História</a></li><br />
             <li><a href="#">Como usar</a></li><br />
             <li><a href="#">Contato</a></li>
-            </ul>
+        </ul>
     </nav>
 
     <!-- HOME PAGE -->
@@ -91,23 +87,29 @@
         </p>
     </div>
 
-    <div class="footer border-top rounded">
-        Todos os direitos reservados
+    <div class="footer border-top">
+        <div class="row">
+            <div class="col">
+                <img src="img/logobranca.png"
+                    alt="Logo Dicionário Criativo" class="img-fluid align-middle">
+            </div>
+        </div>
     </div>
 
 
 
 
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript">
+        window.onload = Active;
+        window.onscroll = Active;
+
+        function MobileMenu(){
+            document.getElementById('toggler').checked = false;
+        }
+    </script>
 </body>
 
 </html>
