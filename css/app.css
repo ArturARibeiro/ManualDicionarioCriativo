@@ -19,6 +19,27 @@ body{
     overflow-x: hidden;
 }
 
+.active{
+    color: white !important;
+    background: linear-gradient(332deg, rgba(230,86,1,1) 0%, rgb(255, 123, 0) 100%) !important;
+    border-radius: 100px !important;
+    transition: background .2s, border-radius .2s ease-in-out;
+}
+
+.active:hover{
+    color: white !important;
+}
+
+.activeBar{
+    background-color: white;
+    margin: 2em;
+    padding: 1em;
+    box-shadow: 0px 25px 10px -20px rgba(145, 145, 145, 0.123);
+    border-radius: 30px !important;
+    border: solid 1px #fcfcfc;
+    transition: opacity 1s ease-in-out;
+}
+
 .nav-menu{
     margin: 1em;
     border-radius: 0px;
@@ -29,22 +50,76 @@ body{
     cursor: pointer;
 }
 
+.menu .link-menu{
+    border-radius: 100px;
+    padding: -1em !important;
+    margin-right: 1vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .menu a{
-    font-size: 1.5vw;
+    font-size: 1.1vw;
     font-family: 'Nunito', sans-serif;
     color: rgb(187, 187, 187);
     transition: color .1s, transform .1s ease-in-out;
 }
 
 .menu a:hover{
-    color: orangered !important;
+    color: orangered;
     transform: scale(1.05);
+    text-decoration: none;
 }
 
 
 .home-page{
+    /* margin-top: 14vh; */
     width: auto;
 }
+
+.home-page .row{
+    flex-wrap: wrap-reverse;
+}
+
+.text-saudacoes{
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(187, 187, 187);
+    font-size: 2.5vw;
+    padding-top: 14%;
+    padding-left: 2em;
+    font-weight: 100;
+    text-align: justify;
+}
+
+.text-saudacoes b{
+    color: rgb(161, 161, 161) !important;
+}
+
+.text-saudacoes button{
+    background: linear-gradient(332deg, rgba(230,86,1,1) 0%, rgb(255, 123, 0) 100%);
+    color: white;
+    font-weight: 600;
+    font-size: 1.2vw;
+    border-radius: 100px;
+    font-weight: 200;
+    transition: transform .1s ease-in-out;
+    box-shadow: 0px 20px 15px -20px rgb(255, 94, 0);
+}
+
+.text-saudacoes button:hover{
+    color: white;
+    transform: scale(1.1);
+}
+
+.img-leitor{
+    max-width: 45vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .boll{
     position: absolute;
@@ -86,44 +161,28 @@ body{
     animation-direction: alternate;
 }
 
-
-.home-page .row{
-    flex-wrap: wrap-reverse;
+/* Div Introdução */
+.introducao{
+    margin-top: 5em;
+    margin-bottom: 20em;
+    padding-left: 6em;
+    padding-right: 6em;
 }
 
-.text-saudacoes{
-    font-family: 'Quicksand', sans-serif;
-    color: rgb(187, 187, 187);
-    font-size: 2.5vw;
-    padding-top: 14%;
-    padding-left: 2em;
-    font-weight: 100;
+.introducao p{
     text-align: justify;
-}
-
-.text-saudacoes b{
-    color: rgb(161, 161, 161) !important;
-}
-
-.text-saudacoes button{
-    background: linear-gradient(332deg, rgba(230,86,1,1) 0%, rgb(255, 123, 0) 100%);
-    color: white;
-    font-weight: 600;
+    padding: 1em;
     font-size: 1.2vw;
-    border-radius: 100px;
-    font-weight: 200;
-    transition: transform .1s ease-in-out;
-    box-shadow: 0px 20px 15px -20px rgb(255, 94, 0);
+    color: rgb(167, 167, 167);
 }
 
-.text-saudacoes button:hover{
-    color: white;
-    transform: scale(1.1);
-}
 
-.img-leitor{
-    max-width: 45vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/* Footer */
+
+.footer{
+    padding: 1em;
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+    color: grey;
 }
