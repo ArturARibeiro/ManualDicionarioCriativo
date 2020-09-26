@@ -1,0 +1,124 @@
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@387&display=swap');
+
+/* Keyframes Animation */
+@keyframes bollmove {
+    from {left: 0px;}
+    to {left: -10px;}
+}
+
+/* webkit Scrollbar */
+::-webkit-scrollbar {width: 10px; height: 8px;}
+::-webkit-scrollbar-button {width: 0px; height: 0px;}
+::-webkit-scrollbar-thumb {background: #ececec; border-radius: 50px; padding: .1em; border: 1px solid #ffffff;}
+::-webkit-scrollbar-thumb:hover {background: #dadada;}
+::-webkit-scrollbar-track {background: #00000000; border-radius: 50px;}
+
+body{
+    overflow-x: hidden;
+}
+
+.nav-menu{
+    margin: 1em;
+    border-radius: 0px;
+}
+
+.nav-menu img{
+    max-width: 10vw;
+    cursor: pointer;
+}
+
+.menu a{
+    font-size: 1.5vw;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(204, 204, 204);
+    transition: color .1s, transform .1s ease-in-out;
+}
+
+.menu a:hover{
+    color: orangered !important;
+    transform: scale(1.05);
+}
+
+
+.home-page{
+    width: auto;
+}
+
+.boll{
+    position: absolute;
+    height: 3vw;
+    width: 12vw;
+    background: rgba(230,86,1,1);
+    border-bottom-right-radius: 200px;
+    border-top-right-radius: 200px;
+    bottom: 00px;
+    left: 00px;
+    animation: bollmove 2s infinite;
+    animation-direction: alternate;
+}
+
+.boll:after,
+.boll:before {
+    content: "";
+    display: block;
+    border-bottom-right-radius: 200px;
+    border-top-right-radius: 200px;
+    position: absolute;
+}
+
+.boll:after{
+    background: rgb(250, 106, 23);
+    top: -2vw;
+    width: 80%;
+    height: 100%;
+    animation: bollmove 1.6s infinite;
+    animation-direction: alternate;
+}
+
+.boll::before{
+    background: rgb(255, 127, 53);
+    top: -4vw;
+    width: 60%;
+    height: 100%;
+    animation: bollmove 1.5s infinite;
+    animation-direction: alternate;
+}
+
+
+.home-page .row{
+    flex-wrap: wrap-reverse;
+}
+
+.text-saudacoes{
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(201, 201, 201);
+    font-size: 2.5vw;
+    padding-top: 14%;
+    padding-left: 2em;
+    font-weight: 100;
+    text-align: justify;
+}
+
+.text-saudacoes button{
+    background: linear-gradient(332deg, rgba(230,86,1,1) 0%, rgb(255, 123, 0) 100%);
+    color: white;
+    font-weight: 600;
+    font-size: 1.2vw;
+    border-radius: 100px;
+    font-weight: 200;
+    transition: transform .1s ease-in-out;
+}
+
+.text-saudacoes button:hover{
+    color: white;
+    transform: scale(1.1);
+}
+
+.img-leitor{
+    max-width: 45vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
