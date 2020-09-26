@@ -17,7 +17,7 @@
     transition:  box-shadow .8s cubic-bezier(.19,1,.22,1);
     width: 60px;
     z-index: 2;
-    box-shadow: 0px 6px 10px -5px rgba(201, 201, 201, 0.24);
+    box-shadow: 0px 6px 10px -5px rgba(201, 201, 201, 0.685);
 }
 
 .hamburger {
