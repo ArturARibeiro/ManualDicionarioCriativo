@@ -2,8 +2,11 @@
 
 /* Mobile */
 
-.menu-mobile {
+.mobile-nav{
     display: none;
+}
+
+.menu-mobile {
     position: fixed;
     background: #FFF;
     border-radius: 50%;
@@ -84,9 +87,9 @@ input:checked ~ .ul-mobile {
 .ul-mobile{
     text-align: center;
     position: absolute;
-    top: 10%;
+    top: 0%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
     list-style: none;
     font-size: 30pt;
     opacity: 0;
@@ -100,7 +103,7 @@ input:checked ~ .ul-mobile {
         display: none;
     }
 
-    .menu-mobile{
+    .mobile-nav{
         display: block !important;
     }
 } 
