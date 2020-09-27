@@ -10,8 +10,8 @@
     position: fixed;
     background: #FFF;
     border-radius: 50%;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
     cursor: pointer;
     height: 60px;
     transition:  box-shadow .8s cubic-bezier(.19,1,.22,1);
@@ -117,6 +117,7 @@ input:checked ~ .ul-mobile {
         text-align: center;
         padding-left: 1vw;
         padding-right: 1vw;
+        margin-top: -1.5em;
     }
 
     .text-saudacoes button{
@@ -125,6 +126,12 @@ input:checked ~ .ul-mobile {
         font-size: 5vw;
         padding-left: 1.5em;
         padding-right: 1.5em;
+    }
+
+    .col-leitor{
+        width: 100%;
+        padding: 0px;
+        margin-top: 2em;
     }
 
     .boll{

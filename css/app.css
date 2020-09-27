@@ -3,10 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@387&display=swap');
 
 /* Keyframes Animation */
-@keyframes bollmove {
-    from {left: 0px;}
-    to {left: -10px;}
-}
+@keyframes bollmove {from {left: 0px;}to {left: -10px;}}
+@keyframes bookmove {from {top: 0px;}to {top: -20px;}}
 
 /* webkit Scrollbar */
 ::-webkit-scrollbar {width: 10px; height: 8px;}
@@ -120,6 +118,12 @@ body{
     margin-right: auto;
 }
 
+.img-livros{
+    position: absolute; 
+    animation: bookmove 2s infinite;
+    animation-direction: alternate;
+}
+
 
 .boll{
     position: absolute;
@@ -130,7 +134,7 @@ body{
     border-top-right-radius: 200px;
     bottom: 00px;
     left: 00px;
-    animation: bollmove 2s infinite;
+    animation: bollmove 1.5s infinite;
     animation-direction: alternate;
 }
 
@@ -148,7 +152,7 @@ body{
     top: -2vw;
     width: 85%;
     height: 100%;
-    animation: bollmove 1.6s infinite;
+    animation: bollmove 1.2s infinite;
     animation-direction: alternate;
 }
 
@@ -157,7 +161,7 @@ body{
     top: -4vw;
     width: 70%;
     height: 100%;
-    animation: bollmove 1.4s infinite;
+    animation: bollmove 1s infinite;
     animation-direction: alternate;
 }
 

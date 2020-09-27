@@ -5,7 +5,7 @@ $('nav a').click(function (e) {
         targetOffset = $(id).offset().top;
     $('html, body').animate({
         scrollTop: targetOffset - menuHeight - 50
-    }, 400);
+    }, 600);
 });
 
 function Active() {
