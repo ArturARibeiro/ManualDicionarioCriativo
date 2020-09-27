@@ -146,7 +146,7 @@ body{
 .boll:after{
     background: rgb(250, 106, 23);
     top: -2vw;
-    width: 80%;
+    width: 85%;
     height: 100%;
     animation: bollmove 1.6s infinite;
     animation-direction: alternate;
@@ -155,9 +155,9 @@ body{
 .boll::before{
     background: rgb(255, 127, 53);
     top: -4vw;
-    width: 60%;
+    width: 70%;
     height: 100%;
-    animation: bollmove 1.5s infinite;
+    animation: bollmove 1.4s infinite;
     animation-direction: alternate;
 }
 

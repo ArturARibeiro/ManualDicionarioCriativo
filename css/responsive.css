@@ -133,7 +133,7 @@ input:checked ~ .ul-mobile {
 
     /* Introdução */
     .introducao{
-
+        background: white;
     }
 
     .introducao h1{
