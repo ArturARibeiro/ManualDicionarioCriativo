@@ -141,8 +141,11 @@ input:checked ~ .ul-mobile {
     }
 
     .introducao p{
-        font-size: 5.6vw;
-        margin-left: -4em;
-        margin-right: -4em;
+        font-size: 6.5vw;
+        margin-left: -3.5em;
+        margin-right: -3.5em;
+        text-align: left;
+        min-width: 90vw;
+        font-weight: 100;
     }
 } 
