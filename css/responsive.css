@@ -109,7 +109,11 @@ input:checked ~ .ul-mobile {
     }
 
     .img-leitor{
-        max-width: 100vw !important;
+        max-width: 110vw !important;
+    }
+
+    .img-livros{
+        max-width: 111vw !important;
     }
 
     .text-saudacoes{
@@ -132,6 +136,7 @@ input:checked ~ .ul-mobile {
         width: 100%;
         padding: 0px;
         margin-top: 2em;
+        margin-left: -5vw;
     }
 
     .boll{
