@@ -8,6 +8,13 @@ $('nav a').click(function (e) {
     }, 600);
 });
 
+function HomePage(){
+    document.getElementsByClassName('home-page')[0].style.transition = "opacity .8s, top .7s ease-in-out";
+    document.getElementsByClassName('home-page')[0].style.top = '0px';
+    document.getElementsByClassName('home-page')[0].style.opacity = '100%';
+
+}
+
 function Active() {
 
     if (window.pageYOffset <= (document.getElementById('introducao').offsetTop - 300)) {
