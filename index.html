@@ -23,13 +23,13 @@
     <!-- Navbar -->
     <nav class="navbar nav-menu" id="menu">
         <img src="https://dicionariocriativo.com.br/templates/novo/img/logobeta.svg" alt="Logo" class="img-fluid"
-            onclick="location.href = 'https://www.dicionariocriativo.com.br/';">
+            onclick="location.href = 'https://www.dicionariocriativo.com.br/'">
 
         <ul class="nav menu">
             <li class="nav-item"><a href="#home" class="link-menu" id="homelink">Home</a></li>
             <li class="nav-item"><a href="#introducao" class="link-menu" id="introlink">Introdução</a></li>
             <li class="nav-item"><a href="#historia" class="link-menu" id="histlink">História</a></li>
-            <li class="nav-item"><a href="#" class="link-menu" id="comolink">Como usar</a></li>
+            <li class="nav-item"><a  href="#" onclick="location.href = './uso.html'" class="link-menu">Como usar</a></li>
             <li class="nav-item"><a href="#" class="link-menu" id="contclink">Contato</a></li>
         </ul>
     </nav>
@@ -45,7 +45,7 @@
             <li><a href="#home" onclick="MobileMenu()">Home</a></li><br />
             <li><a href="#introducao" onclick="MobileMenu()">Introdução</a></li><br />
             <li><a href="#historia" onclick="MobileMenu()">História</a></li><br />
-            <li><a href="#" onclick="MobileMenu()">Como usar</a></li><br />
+            <li><a href="uso.html">Como usar</a></li><br />
             <li><a href="#footer" onclick="MobileMenu()">Contato</a></li>
         </ul>
     </nav>
@@ -126,6 +126,7 @@
 
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slide.js"></script>
     <script src="js/app.js"></script>
     <script type="text/javascript">
         window.onload = Active(), HomePage();

@@ -146,6 +146,8 @@ input:checked ~ .ul-mobile {
     /* Introdução */
     .introducao{
         background: white;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
     .introducao h1{
@@ -154,11 +156,16 @@ input:checked ~ .ul-mobile {
 
     .introducao p{
         font-size: 6.5vw;
-        margin-left: -3.5em;
-        margin-right: -3.5em;
         text-align: left;
         min-width: 90vw;
         font-weight: 400;
         color: rgb(182, 182, 182);
+    }
+
+    /* Como usar */
+    .Slider{
+        background: white;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 } 

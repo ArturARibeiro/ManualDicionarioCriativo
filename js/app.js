@@ -10,7 +10,7 @@ $('nav a').click(function (e) {
 
 function HomePage(){
     document.getElementsByClassName('home-page')[0].style.transition = "opacity .8s, top .7s ease-in-out";
-    document.getElementsByClassName('home-page')[0].style.top = '0px';
+    document.getElementsByClassName('home-page')[0].style.top = '-10px';
     document.getElementsByClassName('home-page')[0].style.opacity = '100%';
 
 }

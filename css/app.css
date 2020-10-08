@@ -3,32 +3,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@387&display=swap');
 
 /* Keyframes Animation */
-@keyframes bollmove {from {left: 0px;}to {left: -10px;}}
-@keyframes bookmove {from {top: 0px;}to {top: -20px;}}
+@keyframes bollmove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: -10px;
+    }
+}
+
+@keyframes bookmove {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: -20px;
+    }
+}
 
 /* webkit Scrollbar */
-::-webkit-scrollbar {width: 10px; height: 8px;}
-::-webkit-scrollbar-button {width: 0px; height: 0px;}
-::-webkit-scrollbar-thumb {background: #ececec; border-radius: 50px; padding: .1em; border: 1px solid #ffffff;}
-::-webkit-scrollbar-thumb:hover {background: #dadada;}
-::-webkit-scrollbar-track {background: #00000000; border-radius: 50px;}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+}
 
-body{
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ececec;
+    border-radius: 50px;
+    padding: .1em;
+    border: 1px solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #dadada;
+}
+
+::-webkit-scrollbar-track {
+    background: #00000000;
+    border-radius: 50px;
+}
+
+body {
     overflow-x: hidden;
 }
 
-.active{
+.active {
     color: white !important;
-    background: linear-gradient(332deg, rgba(230,86,1,1) 0%, rgb(255, 123, 0) 100%) !important;
+    background: linear-gradient(332deg, rgba(230, 86, 1, 1) 0%, rgb(255, 123, 0) 100%) !important;
     border-radius: 100px !important;
     transition: background .2s, border-radius .2s ease-in-out;
 }
 
-.active:hover{
+.active:hover {
     color: white !important;
 }
 
-.activeBar{
+.activeBar {
     background-color: white;
     margin: 2em;
     padding: 1em;
@@ -38,17 +75,17 @@ body{
     transition: opacity 1s ease-in-out;
 }
 
-.nav-menu{
+.nav-menu {
     margin: 1em;
     border-radius: 0px;
 }
 
-.nav-menu img{
+.nav-menu img {
     max-width: 10vw;
     cursor: pointer;
 }
 
-.menu .link-menu{
+.menu .link-menu {
     border-radius: 100px;
     padding: -1em !important;
     margin-right: 1vw;
@@ -58,32 +95,32 @@ body{
     padding-right: 15px;
 }
 
-.menu a{
+.menu a {
     font-size: 1.1vw;
     font-family: 'Nunito', sans-serif;
     color: rgb(187, 187, 187);
     transition: color .1s, transform .1s ease-in-out;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: orangered;
     transform: scale(1.05);
     text-decoration: none;
 }
 
 
-.home-page{
+.home-page {
     position: relative;
     top: -20px;
     width: auto;
     opacity: 0%;
 }
 
-.home-page .row{
+.home-page .row {
     flex-wrap: wrap-reverse;
 }
 
-.text-saudacoes{
+.text-saudacoes {
     font-family: 'Quicksand', sans-serif;
     color: rgb(187, 187, 187);
     font-size: 2.5vw;
@@ -93,12 +130,12 @@ body{
     text-align: justify;
 }
 
-.text-saudacoes b{
+.text-saudacoes b {
     color: rgb(161, 161, 161) !important;
 }
 
-.text-saudacoes button{
-    background: linear-gradient(332deg, rgba(230,86,1,1) 0%, rgb(255, 123, 0) 100%);
+.text-saudacoes button {
+    background: linear-gradient(332deg, rgba(230, 86, 1, 1) 0%, rgb(255, 123, 0) 100%);
     color: white;
     font-weight: 600;
     font-size: 1.2vw;
@@ -108,30 +145,30 @@ body{
     box-shadow: 0px 20px 15px -20px rgb(255, 94, 0);
 }
 
-.text-saudacoes button:hover{
+.text-saudacoes button:hover {
     color: white;
     transform: scale(1.1);
 }
 
-.img-leitor{
+.img-leitor {
     max-width: 45vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.img-livros{
-    position: absolute; 
+.img-livros {
+    position: absolute;
     animation: bookmove 2s infinite;
     animation-direction: alternate;
 }
 
 
-.boll{
+.boll {
     position: absolute;
     height: 3vw;
     width: 12vw;
-    background: rgba(230,86,1,1);
+    background: rgba(230, 86, 1, 1);
     border-bottom-right-radius: 200px;
     border-top-right-radius: 200px;
     bottom: 00px;
@@ -149,7 +186,7 @@ body{
     position: absolute;
 }
 
-.boll:after{
+.boll:after {
     background: rgb(250, 106, 23);
     top: -2vw;
     width: 85%;
@@ -158,7 +195,7 @@ body{
     animation-direction: alternate;
 }
 
-.boll::before{
+.boll::before {
     background: rgb(255, 127, 53);
     top: -4vw;
     width: 70%;
@@ -168,33 +205,148 @@ body{
 }
 
 /* Div Introdução */
-.introducao{
+.introducao {
     margin-top: 5em;
     margin-bottom: 2em;
-    padding-left: 6em;
-    padding-right: 6em;
+    padding-left: 14em;
+    padding-right: 14em;
 }
 
-.introducao p{
+.introducao p {
     text-align: justify;
     padding: 1em;
-    font-size: 1.2vw;
+    font-size: 1.15vw;
     color: rgb(167, 167, 167);
+}
+
+
+/*///////////////////////////////// Como usar */
+
+.tutorial{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.return {
+    position: fixed;
+    left: 1em;
+    top: 1em;
+    font-size: 1vw;
+    transition: .1s ease-in-out;
+    color: grey;
+    z-index: 3;
+}
+
+.return:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+    color: orangered;
+}
+
+.container-uso {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-uso img {
+    max-width: 15vw;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 5em;
+
+}
+
+.form {
+    margin-bottom: 5em;
+}
+
+.container-uso input {
+    border: 0;
+    border-bottom: solid 1px rgb(182, 182, 182);
+    transition: .3s ease-in-out;
+    height: 50px;
+    font-size: 18pt;
+    font-weight: 600;
+    color: grey;
+    margin-bottom: 1em;
+}
+
+.container-uso input:hover {
+    background-color: rgb(243, 243, 243);
+}
+
+.container-uso input:focus {
+    border-color: rgb(182, 182, 182) !important;
+}
+
+.container-uso .form i {
+    position: absolute;
+    margin-top: 1em;
+    right: 2em;
+    transform: scale(1.7);
+    color: rgb(228, 228, 228);
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.container-uso .form i:hover {
+    color: rgb(209, 209, 209);
+}
+
+.container-uso .form button {
+    position: absolute;
+    right: 1em;
+    background-color: transparent;
+    border: solid 1px transparent;
+    color: orangered;
+    transition: .2s ease-in-out;
+}
+
+.container-uso .form button:hover {
+    border: solid 1px orangered;
+}
+
+.mais-buscadas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mais-buscadas>* {
+    border: solid 1px rgb(221, 221, 221);
+    padding: .5em;
+    border-radius: 5px;
+    color: rgb(131, 131, 131);
+    font-weight: 400;
+    margin: 5px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.mais-buscadas>*:hover {
+    border: solid 1px orangered;
+    padding: .5em;
+    border-radius: 5px;
+    color: orangered;
+    font-weight: 400;
+    margin: 5px;
 }
 
 
 /* Footer */
 
-.footer{
+.footer {
     padding: 1em;
     position: relative;
     bottom: 0px;
     text-align: center;
     color: grey;
-    background: linear-gradient(332deg, rgba(230,86,1,1) 0%, rgb(255, 123, 0) 100%);
+    background: linear-gradient(332deg, rgba(230, 86, 1, 1) 0%, rgb(255, 123, 0) 100%);
 }
 
-.footer img{
+.footer img {
     max-width: 300px;
     min-width: 100px;
     margin-top: 1.5em;
