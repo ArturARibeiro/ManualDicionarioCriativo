@@ -224,8 +224,60 @@ body {
 
 .tutorial{
     position: fixed;
-    width: 100%;
-    height: 100%;
+}
+
+.tutorial .display{
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    left: 50%;
+    top: -100%;
+    transform: translate(-50%, -50%);
+    transition: opacity .5s ease-in-out;
+    text-align: center;
+    opacity: 0;
+}
+
+.display p{
+    font-size: 2.25vw;
+    font-weight: 200;
+    color: rgb(209, 209, 209);
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-bottom: 1em;
+}
+
+
+.display button{
+    border:solid 1px rgb(255, 0, 0);
+    color: orangered;
+    margin: 2em;
+    font-size: 14pt;
+}
+
+.display button:hover{
+    background-color: orangered;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .display p{
+        font-size: 2.25vh;
+        font-weight: 200;
+        color: rgb(209, 209, 209);
+        padding-left: 10vw;
+        padding-right: 10vw;
+        margin-bottom: 1em;
+        margin-top: -3em;
+    }
+
+    .display button{
+        border:solid 1px rgb(255, 0, 0);
+        color: orangered;
+        margin: 1em;
+        font-size: 14pt;
+    }
 }
 
 .return {

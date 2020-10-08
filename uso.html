@@ -25,14 +25,17 @@
 
     <a href="index.html" class="return">Voltar</a>
 
-    <div class="container container-uso">
+    <!-- <div class="container container-uso">
         <img src="https://dicionariocriativo.com.br/templates/novo/img/logobeta.svg" alt="Dicionário Criativo"
             class="img-fluid" style="min-width: 300px;">
 
         <div class="form">
-            <i class="gg-search"></i>
-            <input type="text" class="form-control shadow-none" placeholder="Buscar por...">
-            <button class="btn">Aleatório</button>
+            <form onsubmit="">
+                <i class="gg-search"></i>
+                <input type="text" class="form-control shadow-none" placeholder="Buscar por..." id="busca"
+                    autocomplete="off">
+                <button class="btn">Aleatório</button>
+            </form>
         </div>
 
         <p class="text-muted">
@@ -64,10 +67,136 @@
             <div>unicórnio</div>
             <div>bravo</div>
         </div>
-    </div>
+    </div> -->
 
     <div class="tutorial">
-       
+        <div class="display shadow-sm">
+            <p class="text-center" style="padding-top: 30vh;">
+                Bem vindo ao Manual do Dicionário Criativo <br />
+                vamos aprender a usa-lo?
+            </p>
+
+            <button class="btn" onclick="FimTutorial()">Ja conheço</button>
+            <button class="btn" onclick="ProximaPagina(1)">Aprender</button>
+        </div>
+        <div class="display shadow-sm">
+            <p class="text-center" style="padding-top: 30vh;">
+                Primeiro vamos conhecer a interface, essa é nossa barra de pesquisa. Aqui digitamos as palavras que
+                queremos buscar: <br />
+            </p>
+            <div class="form container">
+                <form onsubmit="" style="border: solid 1px red;">
+                    <i class="gg-search" style="position: absolute;
+                    margin-top: 1em;
+                    right: 22%;
+                    transform: scale(1.7);
+                    color: rgb(228, 228, 228);
+                    cursor: pointer;
+                    transition: .5s ease-in-out;"></i>
+                    <input type="text" class="form-control shadow-none" placeholder="Buscar por..." id="busca"
+                        autocomplete="off" style="border: 0;
+                        border-bottom: solid 1px rgb(182, 182, 182);
+                        transition: .3s ease-in-out;
+                        height: 50px;
+                        font-size: 18pt;
+                        font-weight: 600;
+                        color: grey;
+                        margin-bottom: 1em;">
+                </form>
+            </div>
+            <button class="btn" onclick="ProximaPagina(2)">Próximo</button>
+        </div>
+        <div class="display shadow-sm">
+            <p class="text-center" style="padding-top: 30vh;">
+                Um pouco mais abaixo temos o botão de aleatório, clicando nele a definição de uma palavra aleatória é
+                exibido: <br />
+            </p>
+            <div class="form container">
+                <i class="gg-search" style="position: absolute;
+                    margin-top: 1em;
+                    right: 22%;
+                    transform: scale(1.7);
+                    color: rgb(228, 228, 228);
+                    cursor: pointer;
+                    transition: .5s ease-in-out;"></i>
+                <input type="text" class="form-control shadow-none" placeholder="Buscar por..." id="busca"
+                    autocomplete="off" style="border: 0;
+                        border-bottom: solid 1px rgb(182, 182, 182);
+                        transition: .3s ease-in-out;
+                        height: 50px;
+                        font-size: 18pt;
+                        font-weight: 600;
+                        color: grey;
+                        margin-bottom: 1em;">
+                <button class="btn" style=" position: absolute;
+                        right: 19vw;
+                        margin-top: -1em;
+                        background-color: transparent;
+                        border: solid 1px transparent;
+                        color: orangered;
+                        transition: .2s ease-in-out; border: solid 1px red;">Aleatório</button>
+            </div>
+            <button class="btn" onclick="ProximaPagina(3)">Próximo</button>
+        </div>
+        <div class="display shadow-sm">
+            <p class="text-center" style="padding-top: 30vh;">
+                Logo abaixo temos as palavras rápidas, basta clicar em uma delas e você será redirecionado para as
+                definições desta palavra: <br />
+            </p>
+            <div class="form container">
+                <form onsubmit="">
+                    <i class="gg-search" style="position: absolute;
+                    margin-top: 1em;
+                    right: 22%;
+                    transform: scale(1.7);
+                    color: rgb(228, 228, 228);
+                    cursor: pointer;
+                    transition: .5s ease-in-out;"></i>
+                    <input type="text" class="form-control shadow-none" placeholder="Buscar por..." id="busca"
+                        autocomplete="off" style="border: 0;
+                        border-bottom: solid 1px rgb(182, 182, 182);
+                        transition: .3s ease-in-out;
+                        height: 50px;
+                        font-size: 18pt;
+                        font-weight: 600;
+                        color: grey;
+                        margin-bottom: 1em;">
+                </form>
+                <div class="mais-buscadas" style="border: solid 1px red;">
+                    <div>amor</div>
+                    <div>feliz</div>
+                    <div>amizade</div>
+                    <div>beleza</div>
+                    <div>agronomia</div>
+                    <div>barbeiro</div>
+                    <div>moda</div>
+                    <div>vida</div>
+                    <div>futebol</div>
+                    <div>alma</div>
+                    <div>casa</div>
+                    <div>paz</div>
+                    <div>respeito</div>
+                    <div>comida</div>
+                    <div>agonia</div>
+                    <div>teatro</div>
+                    <div>tristeza</div>
+                    <div>medo</div>
+                    <div>ensejo</div>
+                    <div>afastamento</div>
+                    <div>luz</div>
+                    <div>gentileza</div>
+                    <div>unicórnio</div>
+                    <div>bravo</div>
+                </div>
+            </div>
+            <button class="btn" onclick="ProximaPagina(4)">Próximo</button>
+        </div>
+        <div class="display shadow-sm">
+            <p class="text-center" style="padding-top: 30vh;">
+                Pronto agora que conhecemos a ferramenta está na hora de usa-la <br />
+            </p>
+            <button class="btn" onclick="FimTutorial(5)">Próximo</button>
+        </div>
     </div>
 
     <!-- script -->
@@ -76,7 +205,42 @@
 
     <script>
         onload = Tutorial;
+        var Tutorial = document.getElementsByClassName('tutorial')[0];
+        var Display = document.getElementsByClassName('display');
+        var active = 0;
 
+        function Tutorial(a) {
+            Display[active].style.top = "50%";
+            Display[active].style.opacity = "1";
+        }
+
+        function ProximaPagina(a) {
+            if (a >= 0) {
+                Display[a - 1].style.opacity = "0";
+                Display[a].style.top = "50%";
+                Display[a].style.opacity = "1";
+            }
+        }
+
+        function VoltarPagina(a) {
+            if (a > 0) {
+                Display[a].style.opacity = "0";
+                Display[a - 1].style.top = "50%";
+                Display[a - 1].style.opacity = "1";
+            }
+        }
+
+
+        function FimTutorial(e) {
+            window.location.href = "https://dicionariocriativo.com.br/";
+        }
+
+
+        function Submit() {
+            var value = document.getElementById('busca').value;
+
+            window.location.href = `https://dicionariocriativo.com.br/${value}`;
+        }
     </script>
 </body>
 
