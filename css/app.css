@@ -253,7 +253,7 @@ body {
     border:solid 1px rgb(255, 0, 0);
     color: orangered;
     margin: 2em;
-    font-size: 14pt;
+    font-size: 16pt;
 }
 
 .display button:hover{
@@ -263,7 +263,7 @@ body {
 
 @media screen and (max-width: 768px){
     .display p{
-        font-size: 2.25vh;
+        font-size: 4.25vh;
         font-weight: 200;
         color: rgb(209, 209, 209);
         padding-left: 10vw;
@@ -288,6 +288,12 @@ body {
     transition: .1s ease-in-out;
     color: grey;
     z-index: 3;
+}
+
+@media screen and (max-width: 768px){
+    .return{
+        font-size: 3vh;
+    }
 }
 
 .return:hover {
