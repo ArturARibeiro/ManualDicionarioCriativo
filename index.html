@@ -93,13 +93,13 @@
     <div class="funcionalidades container-fluid" id="funcionalidades">
         <h1 class="text-muted font-weight-light">Funcionalidades</h1>
         <div style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 2em;">
-            <label onclick="ShowFunctionality('significado')"
-                style="color: #ee4e4e; border-color: #ee4e4e;">Dicionário de significados</label>
-            
+            <label onclick="ShowFunctionality('significado')" style="color: #ee4e4e; border-color: #ee4e4e;">Dicionário
+                de significados</label>
+
             <label onclick="ShowFunctionality('sinonimos')" for="#"
                 style="color: #427ebc; border-color: #427ebc;">Dicionário de Sinônimos</label>
-            <label onclick="ShowFunctionality('relacionados')" 
-                for="#" style="color: #65c463; border-color: #65c463;">Palavras Relacionadas</label>
+            <label onclick="ShowFunctionality('relacionados')" for="#"
+                style="color: #65c463; border-color: #65c463;">Palavras Relacionadas</label>
             <label onclick="ShowFunctionality('expressoes')" for="#"
                 style="color: #c464bb; border-color: #c464bb;">Dicionário de Expressões</label>
             <label onclick="ShowFunctionality('citacoes')" for="#"
@@ -107,12 +107,17 @@
         </div>
         <div class="txt-funcionalidades">
             <p id="significado" class="active-functionality">
-                Com o <b>Dicionário de Significados</b> você conhecerá todos os significados de qualquer palavra que pesquisar! 
+                Com o <b>Dicionário de Significados</b> você conhecerá todos os significados de qualquer palavra que
+                pesquisar!
             </p>
-            <p id="sinonimos">Já com o <b>Dicionário de Sinônimos</b> você irá descobrir palavras novas que contém o mesmo significado das palavras que vocês já conhece</p>
-            <p id="relacionados">Seguindo para o <b>Dicionário de palavras Relacionadas</b> você vai encontrar as palavras que estão relacionadas a sua busca, desenvolvendo assim um vocabulário maior</p>
-            <p id="expressoes">Em <b>Dicionário de Expressões</b> você verá diferentes expressões sobre suas buscas e irá conhecer novos termos para se comunicar</p>
-            <p id="citacoes">Por fim, em <b>Dicionário de Citações</b> você vai conhecer diferentes e aprender mais sobre grandes pessoas da história.</p>
+            <p id="sinonimos">Já com o <b>Dicionário de Sinônimos</b> você irá descobrir palavras novas que contém o
+                mesmo significado das palavras que vocês já conhece</p>
+            <p id="relacionados">Seguindo para o <b>Dicionário de palavras Relacionadas</b> você vai encontrar as
+                palavras que estão relacionadas a sua busca, desenvolvendo assim um vocabulário maior</p>
+            <p id="expressoes">Em <b>Dicionário de Expressões</b> você verá diferentes expressões sobre suas buscas e
+                irá conhecer novos termos para se comunicar</p>
+            <p id="citacoes">Por fim, em <b>Dicionário de Citações</b> você vai conhecer diferentes e aprender mais
+                sobre grandes pessoas da história.</p>
         </div>
     </div>
 
@@ -124,8 +129,14 @@
             O Dicionário Criativo é diferente de tudo o que você já viu. Ele é o primeiro dicionário pensado
             especificamente para pessoas criativas. Além de fornecer o significado das palavras, o seu objetivo é ajudar
             escritores, jornalistas, publicitários, roteiristas, compositores, blogueiros, estudantes, tradutores, etc.
-            no momento em que estão produzindo seus textos. <br /><br />
-
+            no momento em que estão produzindo seus textos.
+        </p>
+            <figure class="criador">
+                <img src="https://scontent-gru2-2.xx.fbcdn.net/v/t1.0-9/117163371_10158312188097295_1909577854695804397_o.jpg?_nc_cat=110&_nc_sid=84a396&_nc_ohc=03KNkDPwFyAAX8K5ySV&_nc_ht=scontent-gru2-2.xx&oh=62c8cee87707448fbf83fff1271c0491&oe=5FA7F975"
+                    alt="" class="img-fluid" />
+                <figcaption class="text-muted">Felipe Iszlaji - Fundador</figcaption>
+            </figure>
+        <p>
             Unindo pesquisa avançada em linguística computacional, parcerias com empresas e universidades, e contando
             com a cultura colaborativa, o Dicionário Criativo quer organizar a língua portuguesa com muita criatividade
             e uma pitada de ousadia. Estamos construindo o maior dicionário de analogias da internet, relacionando
@@ -163,9 +174,9 @@
         }
 
         function ShowFunctionality(id) {
-           $('.active-functionality').removeClass('active-functionality');
-           $(`#${id}`).addClass('active-functionality');
-            
+            $('.active-functionality').removeClass('active-functionality');
+            $(`#${id}`).addClass('active-functionality');
+
         }
     </script>
 </body>

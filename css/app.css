@@ -219,6 +219,21 @@ body {
     color: rgb(167, 167, 167);
 }
 
+.criador{
+    float: right;
+    max-width: 15vw;
+    margin: 1em;
+    filter: grayscale(100%);
+}
+
+.criador img{
+    border-radius: 10px;
+}
+
+.criador figcaption{
+   padding-left: 10px;
+}
+
 /* ////////////////////////////////Funcionalidades */
 
 .funcionalidades {
