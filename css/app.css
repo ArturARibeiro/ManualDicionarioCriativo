@@ -42,7 +42,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #dadada;
+    background: #c0c0c0;
 }
 
 ::-webkit-scrollbar-track {
@@ -219,6 +219,43 @@ body {
     color: rgb(167, 167, 167);
 }
 
+/* ////////////////////////////////Funcionalidades */
+
+.funcionalidades {
+    margin-top: 5em;
+    margin-bottom: 2em;
+    padding-left: 12em;
+    padding-right: 12em;
+}
+
+.funcionalidades label{
+    font-size: 1.2vw;
+    margin: 10px;
+    border: solid 1px !important;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .1s ease-in-out;
+}
+
+.txt-funcionalidades p{
+    position: absolute;
+    padding: 1em;
+    opacity: 0;
+    font-size: 1.5vw;
+    color: rgb(167, 167, 167);
+    text-align: center;
+}
+
+.active-functionality{
+    transition: .4s ease-in-out;
+    position: relative !important;
+    opacity: 1 !important;
+}
+
+.funcionalidades label:hover{
+    transform: scale(1.01);
+}
+
 
 /*///////////////////////////////// Como usar */
 
@@ -263,7 +300,7 @@ body {
 
 @media screen and (max-width: 768px){
     .display p{
-        font-size: 4.25vh;
+        font-size: 3.25vh;
         font-weight: 200;
         color: rgb(209, 209, 209);
         padding-left: 10vw;

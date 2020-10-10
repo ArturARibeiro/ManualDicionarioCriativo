@@ -24,10 +24,17 @@ function Active() {
     }
 
     if (window.pageYOffset > (document.getElementById('introducao').offsetTop - 300)
-        && window.pageYOffset < (document.getElementById('historia').offsetTop - 300)) {
+        && window.pageYOffset < (document.getElementById('funcionalidades').offsetTop - 300)) {
         $('#introlink').addClass('active');
     } else {
         $('#introlink').removeClass('active');
+    }
+
+    if (window.pageYOffset > (document.getElementById('funcionalidades').offsetTop - 300)
+        && window.pageYOffset < (document.getElementById('historia').offsetTop - 300)) {
+        $('#funclink').addClass('active');
+    } else {
+        $('#funclink').removeClass('active');
     }
 
     if (window.pageYOffset > (document.getElementById('historia').offsetTop - 300)) {

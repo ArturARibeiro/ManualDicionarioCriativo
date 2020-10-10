@@ -88,7 +88,7 @@ input:checked ~ .ul-mobile {
 .ul-mobile{
     text-align: center;
     position: fixed;
-    top: -5%;
+    top: 0%;
     left: 50%;
     transform: translate(-50%, 0%);
     list-style: none;
@@ -99,7 +99,7 @@ input:checked ~ .ul-mobile {
     z-index: 1100;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
     .nav-menu{
         display: none;
     }
@@ -155,7 +155,32 @@ input:checked ~ .ul-mobile {
     }
 
     .introducao p{
-        font-size: 6.5vw;
+        font-size: 5.5vw;
+        text-align: left;
+        min-width: 90vw;
+        font-weight: 400;
+        color: rgb(182, 182, 182);
+    }
+
+    /* Funcionalidades */
+
+    .funcionalidades {
+        background: white;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .funcionalidades label{
+        font-size: 5.5vw;
+        text-align: left;
+        min-width: 90vw;
+        font-weight: 400;
+        color: rgb(182, 182, 182);
+        text-align: center;
+    }
+
+    .funcionalidades p{
+        font-size: 5.5vw;
         text-align: left;
         min-width: 90vw;
         font-weight: 400;

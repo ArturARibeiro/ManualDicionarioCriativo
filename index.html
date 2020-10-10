@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link href="https://css.gg/css?=|facebook|google|twitter" rel="stylesheet">
 
-    
+
 </head>
 
 <body>
@@ -28,9 +28,9 @@
         <ul class="nav menu">
             <li class="nav-item"><a href="#home" class="link-menu" id="homelink">Home</a></li>
             <li class="nav-item"><a href="#introducao" class="link-menu" id="introlink">Introdução</a></li>
+            <li class="nav-item"><a href="#funcionalidades" class="link-menu" id="funclink">Funcionalidades</a></li>
             <li class="nav-item"><a href="#historia" class="link-menu" id="histlink">História</a></li>
-            <li class="nav-item"><a  href="#" onclick="location.href = './uso.html'" class="link-menu">Como usar</a></li>
-            <li class="nav-item"><a href="#" class="link-menu" id="contclink">Contato</a></li>
+            <li class="nav-item"><a href="#" onclick="location.href = './uso.html'" class="link-menu">Como usar</a></li>
         </ul>
     </nav>
     <nav class="mobile-nav">
@@ -40,14 +40,14 @@
                 <span class='hamburger'></span>
             </div>
         </label>
-        
+
         <ul" class="ul-mobile" style="transform: translate(-50%, 30%) !important;">
             <li><a href="#home" onclick="MobileMenu()">Home</a></li><br />
             <li><a href="#introducao" onclick="MobileMenu()">Introdução</a></li><br />
+            <li><a href="#funcionalidades" onclick="MobileMenu()">Funcionalidades</a></li><br />
             <li><a href="#historia" onclick="MobileMenu()">História</a></li><br />
-            <li><a href="#" onclick="location.href = './uso.html'">Como usar</a></li><br />
-            <li><a href="#footer" onclick="MobileMenu()">Contato</a></li>
-        </ul>
+            <li><a href="#" onclick="location.href = './uso.html'">Como usar</a></li>
+            </ul>
     </nav>
 
     <!-- HOME PAGE -->
@@ -84,8 +84,36 @@
 
             Dizem que os limites da nossa linguagem são os limites do nosso universo. Queremos que o Dicionário Criativo
             ajude todos que, com suas ideias e palavras, desejam empurrar os limites do nosso universo para cada vez
-            mais longe. <br /><br />
+            mais longe. <small style="font-size: 8pt; color: #c5c5c5;">Fonte:
+                dicionariocriativo.com.br/saiba-mais</small> <br /><br />
         </p>
+
+    </div>
+
+    <div class="funcionalidades container-fluid" id="funcionalidades">
+        <h1 class="text-muted font-weight-light">Funcionalidades</h1>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 2em;">
+            <label onclick="ShowFunctionality('significado')"
+                style="color: #ee4e4e; border-color: #ee4e4e;">Dicionário de significados</label>
+            
+            <label onclick="ShowFunctionality('sinonimos')" for="#"
+                style="color: #427ebc; border-color: #427ebc;">Dicionário de Sinônimos</label>
+            <label onclick="ShowFunctionality('relacionados')" 
+                for="#" style="color: #65c463; border-color: #65c463;">Palavras Relacionadas</label>
+            <label onclick="ShowFunctionality('expressoes')" for="#"
+                style="color: #c464bb; border-color: #c464bb;">Dicionário de Expressões</label>
+            <label onclick="ShowFunctionality('citacoes')" for="#"
+                style="color: #cd5680; border-color: #cd5680;">Dicionário de Citações</label>
+        </div>
+        <div class="txt-funcionalidades">
+            <p id="significado" class="active-functionality">
+                Com o <b>Dicionário de Significados</b> você conhecerá todos os significados de qualquer palavra que pesquisar! 
+            </p>
+            <p id="sinonimos">Já com o <b>Dicionário de Sinônimos</b> você irá descobrir palavras novas que contém o mesmo significado das palavras que vocês já conhece</p>
+            <p id="relacionados">Seguindo para o <b>Dicionário de palavras Relacionadas</b> você vai encontrar as palavras que estão relacionadas a sua busca, desenvolvendo assim um vocabulário maior</p>
+            <p id="expressoes">Em <b>Dicionário de Expressões</b> você verá diferentes expressões sobre suas buscas e irá conhecer novos termos para se comunicar</p>
+            <p id="citacoes">Por fim, em <b>Dicionário de Citações</b> você vai conhecer diferentes e aprender mais sobre grandes pessoas da história.</p>
+        </div>
     </div>
 
 
@@ -114,11 +142,10 @@
     <div class="footer border-top" id="footer">
         <div class="row">
             <div class="col">
-                <img src="img/logobranca.png"
-                    alt="Logo Dicionário Criativo" class="img-fluid align-middle">
+                <img src="img/logobranca.png" alt="Logo Dicionário Criativo" class="img-fluid align-middle">
             </div>
         </div>
-        <small class="text-white" style="letter-spacing: 2px;"><b>Contato:</b> contato@ManualDC.com.br</small>
+        <!-- <small class="text-white" style="letter-spacing: 2px;"><b>Contato:</b> contato@ManualDC.com.br</small> -->
     </div>
 
 
@@ -126,14 +153,19 @@
 
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/slide.js"></script>
     <script src="js/app.js"></script>
     <script type="text/javascript">
         window.onload = Active(), HomePage();
         window.onscroll = Active;
 
-        function MobileMenu(){
+        function MobileMenu() {
             document.getElementById('toggler').checked = false;
+        }
+
+        function ShowFunctionality(id) {
+           $('.active-functionality').removeClass('active-functionality');
+           $(`#${id}`).addClass('active-functionality');
+            
         }
     </script>
 </body>
