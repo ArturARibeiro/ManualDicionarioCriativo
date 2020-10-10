@@ -93,17 +93,18 @@
     <div class="funcionalidades container-fluid" id="funcionalidades">
         <h1 class="text-muted font-weight-light">Funcionalidades</h1>
         <div style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 2em;">
-            <label onclick="ShowFunctionality('significado')" style="color: #ee4e4e; border-color: #ee4e4e;">Dicionário
+            <label onclick="ShowFunctionality('significado')" style="color: #ee4e4e; border-color: #ee4e4e;"
+                id="significado-button" class="active-button-functionality">Dicionário
                 de significados</label>
 
-            <label onclick="ShowFunctionality('sinonimos')" for="#"
-                style="color: #427ebc; border-color: #427ebc;">Dicionário de Sinônimos</label>
-            <label onclick="ShowFunctionality('relacionados')" for="#"
-                style="color: #65c463; border-color: #65c463;">Palavras Relacionadas</label>
-            <label onclick="ShowFunctionality('expressoes')" for="#"
-                style="color: #c464bb; border-color: #c464bb;">Dicionário de Expressões</label>
-            <label onclick="ShowFunctionality('citacoes')" for="#"
-                style="color: #cd5680; border-color: #cd5680;">Dicionário de Citações</label>
+            <label onclick="ShowFunctionality('sinonimos')" for="#" style="color: #427ebc; border-color: #427ebc;"
+                id="sinonimos-button">Dicionário de Sinônimos</label>
+            <label onclick="ShowFunctionality('relacionados')" for="#" style="color: #65c463; border-color: #65c463;"
+                id="relacionados-button">Palavras Relacionadas</label>
+            <label onclick="ShowFunctionality('expressoes')" for="#" style="color: #c464bb; border-color: #c464bb;"
+                id="expressoes-button">Dicionário de Expressões</label>
+            <label onclick="ShowFunctionality('citacoes')" for="#" style="color: #cd5680; border-color: #cd5680;"
+                id="citacoes-button">Dicionário de Citações</label>
         </div>
         <div class="txt-funcionalidades">
             <p id="significado" class="active-functionality">
@@ -131,11 +132,11 @@
             escritores, jornalistas, publicitários, roteiristas, compositores, blogueiros, estudantes, tradutores, etc.
             no momento em que estão produzindo seus textos.
         </p>
-            <figure class="criador">
-                <img src="https://scontent-gru2-2.xx.fbcdn.net/v/t1.0-9/117163371_10158312188097295_1909577854695804397_o.jpg?_nc_cat=110&_nc_sid=84a396&_nc_ohc=03KNkDPwFyAAX8K5ySV&_nc_ht=scontent-gru2-2.xx&oh=62c8cee87707448fbf83fff1271c0491&oe=5FA7F975"
-                    alt="" class="img-fluid" />
-                <figcaption class="text-muted">Felipe Iszlaji - Fundador</figcaption>
-            </figure>
+        <figure class="criador">
+            <img src="https://scontent-gru2-2.xx.fbcdn.net/v/t1.0-9/117163371_10158312188097295_1909577854695804397_o.jpg?_nc_cat=110&_nc_sid=84a396&_nc_ohc=03KNkDPwFyAAX8K5ySV&_nc_ht=scontent-gru2-2.xx&oh=62c8cee87707448fbf83fff1271c0491&oe=5FA7F975"
+                alt="" class="img-fluid" />
+            <figcaption class="text-muted">Felipe Iszlaji - Fundador</figcaption>
+        </figure>
         <p>
             Unindo pesquisa avançada em linguística computacional, parcerias com empresas e universidades, e contando
             com a cultura colaborativa, o Dicionário Criativo quer organizar a língua portuguesa com muita criatividade
@@ -177,6 +178,8 @@
             $('.active-functionality').removeClass('active-functionality');
             $(`#${id}`).addClass('active-functionality');
 
+            $('.active-button-functionality').removeClass('active-button-functionality');
+            $(`#${id}-button`).addClass('active-button-functionality');
         }
     </script>
 </body>

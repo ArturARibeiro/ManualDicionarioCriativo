@@ -243,10 +243,14 @@ body {
     padding-right: 12em;
 }
 
+.active-button-functionality{
+    border: solid 3px !important;
+}
+
 .funcionalidades label{
     font-size: 1.2vw;
     margin: 10px;
-    border: solid 1px !important;
+    border: solid 1px;
     padding: 10px;
     border-radius: 10px;
     transition: .1s ease-in-out;
@@ -258,17 +262,12 @@ body {
     opacity: 0;
     font-size: 1.5vw;
     color: rgb(167, 167, 167);
-    text-align: center;
 }
 
 .active-functionality{
     transition: .4s ease-in-out;
     position: relative !important;
     opacity: 1 !important;
-}
-
-.funcionalidades label:hover{
-    transform: scale(1.05);
 }
 
 
