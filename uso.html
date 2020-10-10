@@ -204,14 +204,27 @@
             </div>
             <button class="btn" onclick="ProximaPagina(4)" style="margin-bottom: 3em;">Próximo</button>
         </div>
-        <div class="display shadow-sm"><div class="boll"></div>
+        <div class="display shadow-sm" style="overflow: auto;"><div class="boll"></div>
             <p class="text-center" style="padding-top: 35vh;">
                 Depois de realizar qualquer um desses passos, podemos ver os significados, sinônimos, as palavras
                 relacionadas e as expressões dessa palavra. <br />
             </p>
-            <div class="fixed-bottom">
-                <button class="btn" onclick="ProximaPagina(5)">Próximo</button>
+            <div class="funcionalidades container-fluid" id="funcionalidades">
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 2em;">
+                    <label onclick="ShowFunctionality('significado')"
+                        style="color: #ee4e4e; border-color: #ee4e4e;">Dicionário de significados</label>
+                    
+                    <label onclick="ShowFunctionality('sinonimos')" for="#"
+                        style="color: #427ebc; border-color: #427ebc;">Dicionário de Sinônimos</label>
+                    <label onclick="ShowFunctionality('relacionados')" 
+                        for="#" style="color: #65c463; border-color: #65c463;">Palavras Relacionadas</label>
+                    <label onclick="ShowFunctionality('expressoes')" for="#"
+                        style="color: #c464bb; border-color: #c464bb;">Dicionário de Expressões</label>
+                    <label onclick="ShowFunctionality('citacoes')" for="#"
+                        style="color: #cd5680; border-color: #cd5680;">Dicionário de Citações</label>
+                </div>
             </div>
+            <button class="btn" onclick="ProximaPagina(5)" style="margin-bottom: 3em;">Próximo</button>
         </div>
         <div class="display shadow-sm"><div class="boll"></div>
             <p class="text-center" style="padding-top: 33vh;">
