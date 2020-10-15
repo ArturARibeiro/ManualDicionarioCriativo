@@ -37,10 +37,17 @@ function Active() {
         $('#funclink').removeClass('active');
     }
 
-    if (window.pageYOffset > (document.getElementById('historia').offsetTop - 300)) {
+    if (window.pageYOffset > (document.getElementById('historia').offsetTop - 300)
+        && window.pageYOffset < (document.getElementById('equipe').offsetTop - 300)) {
         $('#histlink').addClass('active');
     } else {
         $('#histlink').removeClass('active');
+    }
+
+    if (window.pageYOffset > (document.getElementById('equipe').offsetTop - 300)) {
+        $('#equipelink').addClass('active');
+    } else {
+        $('#equipelink').removeClass('active');
     }
 
     if (window.pageYOffset >= 200 && document.body.offsetWidth > 768) {

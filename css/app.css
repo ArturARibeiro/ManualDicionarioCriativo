@@ -443,6 +443,30 @@ body {
 }
 
 
+
+/* Equipe */
+
+#equipe figure{
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+#equipe figure:hover{
+    transform: scale(1.1);
+}
+
+.img-equipe{
+    max-width: 200px;
+    margin: 20px;
+    border-radius: 200px;
+}
+
+.img-equipe ~ figcaption{
+    text-align: center;
+    font-size: .8vw;
+}
+
+
 /* Footer */
 
 .footer {
