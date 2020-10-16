@@ -459,11 +459,27 @@ body {
     max-width: 200px;
     margin: 20px;
     border-radius: 200px;
+
 }
 
 .img-equipe ~ figcaption{
     text-align: center;
     font-size: .8vw;
+}
+
+@media screen and (max-width: 1024px) {
+    #equipe .col{
+        text-align: center;
+    }
+
+    .img-equipe{
+        margin: 20px auto;
+    
+    }
+    .img-equipe ~ figcaption{
+        text-align: center;
+        font-size: 2vh;
+    }
 }
 
 
