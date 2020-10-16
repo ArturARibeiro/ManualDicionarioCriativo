@@ -473,18 +473,24 @@ body {
 
     .img-equipe{
         margin: 20px auto;
-    
+        max-width: 35vh !important;
     }
     .img-equipe ~ figcaption{
         text-align: center;
         font-size: 2vh;
+    }
+
+    .equipe-manual img{
+        filter: grayscale(100%);
+        transition: .3s ease-in-out;
+        max-width: 35vh !important;
     }
 }
 
 .equipe-manual img{
     filter: grayscale(100%);
     transition: .3s ease-in-out;
-    max-width: 10vw !important;
+    max-width: 10vw;
 }
 
 .equipe-manual figure:hover > img{
