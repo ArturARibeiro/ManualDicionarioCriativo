@@ -482,6 +482,14 @@ body {
     }
 }
 
+.equipe-manual img{
+    filter: grayscale(100%);
+    transition: .3s ease-in-out;
+}
+
+.equipe-manual figure:hover > img{
+    filter: grayscale(0%);
+}
 
 /* Footer */
 
