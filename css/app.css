@@ -456,10 +456,9 @@ body {
 }
 
 .img-equipe{
-    max-width: 200px;
     margin: 20px;
     border-radius: 200px;
-
+    max-width: 10vw !important;
 }
 
 .img-equipe ~ figcaption{
@@ -485,6 +484,7 @@ body {
 .equipe-manual img{
     filter: grayscale(100%);
     transition: .3s ease-in-out;
+    max-width: 10vw !important;
 }
 
 .equipe-manual figure:hover > img{
